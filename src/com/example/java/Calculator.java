@@ -7,25 +7,25 @@ import static com.example.java.util.MathMethods.*;
 public class Calculator {
 
     public static void main(String[] args) {
-        String s1 = getInput("Enter a numeric value: ");
-        String s2 = getInput("Enter a numeric value: ");
-        String op = getInput("Choose an operation (+ - * /):");
+        String string1 = getInput("Enter a numeric value: ");
+        String string2 = getInput("Enter a numeric value: ");
+        String option = getInput("Choose an operation (+ - * /):");
 
         double result;
 
         try {
-            switch (op) {
+            switch (option) {
                 case "+":
-                    result = addValues(s1, s2);
+                    result = addValues(string1, string2);
                     break;
                 case "-":
-                    result = subtractValues(s1, s2);
+                    result = subtractValues(string1, string2);
                     break;
                 case "*":
-                    result = multiplyValues(s1, s2);
+                    result = multiplyValues(string1, string2);
                     break;
                 case "/":
-                    result = divideValues(s1, s2);
+                    result = divideValues(string1, string2);
                     break;
                 default:
                     System.out.println("Unrecognized operation!");
